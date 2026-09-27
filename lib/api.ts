@@ -1,0 +1,4 @@
+import {ZodError} from 'zod';
+import {ServiceError} from './sources/arcgis';
+export function failure(error:unknown,requestId:string){const status=error instanceof ZodError||error instanceof SyntaxError?400:error instanceof ServiceError?error.status:503;console.error(JSON.stringify({requestId,status,error:error instanceof ZodError?'validation':error instanceof Error?error.message:'unknown'}));return Response.json({schemaVersion:'1',requestId,error:error instanceof ZodError?error.issues.map(i=>i.message).join(' '):error instanceof ServiceError?error.message:status===400?'Invalid JSON request.':'Public data is temporarily unavailable. Try a sample parcel or retry.'},{status});}
+export async function body(request:Request){const text=await request.text();if(text.length>20000)throw new ServiceError('Request too large.',413);return JSON.parse(text);}

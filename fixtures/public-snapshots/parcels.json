@@ -1,0 +1,863 @@
+[
+  {
+    "snapshotId": "d6a58adb-a13c-4a2f-83f4-7d092199ce37",
+    "pin": "0083A00188000000",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.92880085627493,
+            40.47086518048445
+          ],
+          [
+            -79.92893223781756,
+            40.470911535537134
+          ],
+          [
+            -79.92912398387378,
+            40.47058675313488
+          ],
+          [
+            -79.92899077809882,
+            40.470539563927325
+          ],
+          [
+            -79.92880085627493,
+            40.47086518048445
+          ]
+        ]
+      ]
+    },
+    "areaSqFt": 5259.459701394159,
+    "reportedAreaSqFt": 5265.1570190200255,
+    "city": "Pittsburgh",
+    "cityVerified": true,
+    "zoningDistricts": [
+      {
+        "code": "R3-L",
+        "share": 100,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -79.92912398387378,
+                40.47058675313488
+              ],
+              [
+                -79.92899077809882,
+                40.470539563927325
+              ],
+              [
+                -79.92880085627493,
+                40.47086518048445
+              ],
+              [
+                -79.92893223781756,
+                40.470911535537134
+              ],
+              [
+                -79.92912398387378,
+                40.47058675313488
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "zoningAvailable": true,
+    "layers": [
+      {
+        "id": "slope",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      },
+      {
+        "id": "landslide",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "parcel",
+        "title": "Allegheny County · Parcel boundaries",
+        "url": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0",
+        "queryUrl": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0/query?f=geojson&where=PIN+%3D+%270083A00188000000%27+OR+MAPBLOCKLOT+%3D+%270083A00188000000%27&outFields=PIN%2CMAPBLOCKLOT%2CMUNICODE%2CCALCACREAGE%2CSHAPE_Area&outSR=4326&returnGeometry=true",
+        "retrievedAt": "2026-09-26T21:40:14.034Z",
+        "mode": "live"
+      },
+      {
+        "id": "zoning",
+        "title": "City of Pittsburgh · Base zoning",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0/query?f=geojson&where=1%3D1&outFields=zon_new%2Cfull_zoning_type&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.92912398387378%2C%22ymin%22%3A40.470539563927325%2C%22xmax%22%3A-79.92880085627493%2C%22ymax%22%3A40.470911535537134%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.265Z",
+        "mode": "live"
+      },
+      {
+        "id": "slope",
+        "title": "City of Pittsburgh · 25%+ slope",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0/query?f=geojson&where=1%3D1&outFields=slope25&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.92912398387378%2C%22ymin%22%3A40.470539563927325%2C%22xmax%22%3A-79.92880085627493%2C%22ymax%22%3A40.470911535537134%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.317Z",
+        "mode": "live"
+      },
+      {
+        "id": "landslide",
+        "title": "City of Pittsburgh · Landslide-prone areas",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0/query?f=geojson&where=1%3D1&outFields=landslideprone%2Ccode&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.92912398387378%2C%22ymin%22%3A40.470539563927325%2C%22xmax%22%3A-79.92880085627493%2C%22ymax%22%3A40.470911535537134%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.359Z",
+        "mode": "live"
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "snapshotId": "8c2cff98-03c9-4ea2-8eec-c1c85fc3e904",
+    "pin": "0083A00248000000",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.92978644295358,
+            40.47012822851109
+          ],
+          [
+            -79.93009150296974,
+            40.47023642836468
+          ],
+          [
+            -79.93007329438514,
+            40.470132085445435
+          ],
+          [
+            -79.92982925137412,
+            40.47004831868654
+          ],
+          [
+            -79.92978644295358,
+            40.47012822851109
+          ]
+        ]
+      ]
+    },
+    "areaSqFt": 2680.4014490114487,
+    "reportedAreaSqFt": 2683.3061254967506,
+    "city": "Pittsburgh",
+    "cityVerified": true,
+    "zoningDistricts": [
+      {
+        "code": "R3-L",
+        "share": 100,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -79.93009150296974,
+                40.47023642836468
+              ],
+              [
+                -79.93007329438514,
+                40.470132085445435
+              ],
+              [
+                -79.92982925137412,
+                40.47004831868654
+              ],
+              [
+                -79.92978644295358,
+                40.47012822851109
+              ],
+              [
+                -79.93009150296974,
+                40.47023642836468
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "zoningAvailable": true,
+    "layers": [
+      {
+        "id": "slope",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      },
+      {
+        "id": "landslide",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "parcel",
+        "title": "Allegheny County · Parcel boundaries",
+        "url": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0",
+        "queryUrl": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0/query?f=geojson&where=PIN+%3D+%270083A00248000000%27+OR+MAPBLOCKLOT+%3D+%270083A00248000000%27&outFields=PIN%2CMAPBLOCKLOT%2CMUNICODE%2CCALCACREAGE%2CSHAPE_Area&outSR=4326&returnGeometry=true",
+        "retrievedAt": "2026-09-26T21:40:14.562Z",
+        "mode": "live"
+      },
+      {
+        "id": "zoning",
+        "title": "City of Pittsburgh · Base zoning",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0/query?f=geojson&where=1%3D1&outFields=zon_new%2Cfull_zoning_type&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.93009150296974%2C%22ymin%22%3A40.47004831868654%2C%22xmax%22%3A-79.92978644295358%2C%22ymax%22%3A40.47023642836468%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.791Z",
+        "mode": "live"
+      },
+      {
+        "id": "slope",
+        "title": "City of Pittsburgh · 25%+ slope",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0/query?f=geojson&where=1%3D1&outFields=slope25&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.93009150296974%2C%22ymin%22%3A40.47004831868654%2C%22xmax%22%3A-79.92978644295358%2C%22ymax%22%3A40.47023642836468%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.792Z",
+        "mode": "live"
+      },
+      {
+        "id": "landslide",
+        "title": "City of Pittsburgh · Landslide-prone areas",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0/query?f=geojson&where=1%3D1&outFields=landslideprone%2Ccode&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-79.93009150296974%2C%22ymin%22%3A40.47004831868654%2C%22xmax%22%3A-79.92978644295358%2C%22ymax%22%3A40.47023642836468%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:14.792Z",
+        "mode": "live"
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "snapshotId": "e6e5f9f1-3884-4241-aaf5-04dee7bd080d",
+    "pin": "0004F00112000000",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.00999277226019,
+            40.43029210880304
+          ],
+          [
+            -80.00969359281218,
+            40.43062627786251
+          ],
+          [
+            -80.0099026410619,
+            40.430739141357726
+          ],
+          [
+            -80.0100165444742,
+            40.430800597018404
+          ],
+          [
+            -80.01012906863123,
+            40.4308612066815
+          ],
+          [
+            -80.01025578028805,
+            40.43092959675048
+          ],
+          [
+            -80.01034634597048,
+            40.43097827911858
+          ],
+          [
+            -80.01061125491431,
+            40.43085458798753
+          ],
+          [
+            -80.01070191565044,
+            40.43081224409562
+          ],
+          [
+            -80.01071120571925,
+            40.430807944196104
+          ],
+          [
+            -80.01073434389554,
+            40.43073445024986
+          ],
+          [
+            -80.01052744677214,
+            40.430632277218045
+          ],
+          [
+            -80.0104027245485,
+            40.43056959495259
+          ],
+          [
+            -80.01040631265109,
+            40.43055595561311
+          ],
+          [
+            -80.01042338199298,
+            40.43048903198109
+          ],
+          [
+            -80.01035744767975,
+            40.430478492143536
+          ],
+          [
+            -80.01032683158708,
+            40.4304627750211
+          ],
+          [
+            -80.01020527200511,
+            40.43040062513702
+          ],
+          [
+            -80.00999277226019,
+            40.43029210880304
+          ]
+        ]
+      ]
+    },
+    "areaSqFt": 35689.37960904803,
+    "reportedAreaSqFt": 35727.696093605125,
+    "city": "Pittsburgh",
+    "cityVerified": true,
+    "zoningDistricts": [
+      {
+        "code": "LNC",
+        "share": 99.24030465759087,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.01072977081816,
+                40.43074897574655
+              ],
+              [
+                -80.01040272393075,
+                40.43056959464049
+              ],
+              [
+                -80.01042338140768,
+                40.430489031887525
+              ],
+              [
+                -80.01035744767975,
+                40.430478492143536
+              ],
+              [
+                -80.01032683158708,
+                40.4304627750211
+              ],
+              [
+                -80.01020527200511,
+                40.43040062513702
+              ],
+              [
+                -80.00999277226019,
+                40.43029210880304
+              ],
+              [
+                -80.00969359281218,
+                40.43062627786251
+              ],
+              [
+                -80.0099026410619,
+                40.430739141357726
+              ],
+              [
+                -80.0100165444742,
+                40.430800597018404
+              ],
+              [
+                -80.01012906863123,
+                40.4308612066815
+              ],
+              [
+                -80.01025578028805,
+                40.43092959675048
+              ],
+              [
+                -80.01034634597048,
+                40.43097827911858
+              ],
+              [
+                -80.01061125491431,
+                40.43085458798753
+              ],
+              [
+                -80.01070191565044,
+                40.43081224409562
+              ],
+              [
+                -80.01071120571925,
+                40.430807944196104
+              ],
+              [
+                -80.01072977081816,
+                40.43074897574655
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "code": "R2-H",
+        "share": 0.7596947396958661,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.01073434389554,
+                40.43073445024986
+              ],
+              [
+                -80.01052744677214,
+                40.430632277218045
+              ],
+              [
+                -80.0104027245485,
+                40.43056959495259
+              ],
+              [
+                -80.01040631265109,
+                40.43055595561311
+              ],
+              [
+                -80.01042338199298,
+                40.43048903198109
+              ],
+              [
+                -80.01042338139922,
+                40.430489031886175
+              ],
+              [
+                -80.01040272392495,
+                40.43056959462839
+              ],
+              [
+                -80.01072977082055,
+                40.43074897573898
+              ],
+              [
+                -80.01073434389554,
+                40.43073445024986
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "zoningAvailable": true,
+    "layers": [
+      {
+        "id": "slope",
+        "available": false,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      },
+      {
+        "id": "landslide",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "parcel",
+        "title": "Allegheny County · Parcel boundaries",
+        "url": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0",
+        "queryUrl": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0/query?f=geojson&where=PIN+%3D+%270004F00112000000%27+OR+MAPBLOCKLOT+%3D+%270004F00112000000%27&outFields=PIN%2CMAPBLOCKLOT%2CMUNICODE%2CCALCACREAGE%2CSHAPE_Area&outSR=4326&returnGeometry=true",
+        "retrievedAt": "2026-09-26T21:40:15.011Z",
+        "mode": "live"
+      },
+      {
+        "id": "zoning",
+        "title": "City of Pittsburgh · Base zoning",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0/query?f=geojson&where=1%3D1&outFields=zon_new%2Cfull_zoning_type&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.01073434389554%2C%22ymin%22%3A40.43029210880304%2C%22xmax%22%3A-80.00969359281218%2C%22ymax%22%3A40.43097827911858%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:15.134Z",
+        "mode": "live"
+      },
+      {
+        "id": "slope",
+        "title": "City of Pittsburgh · 25%+ slope",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0",
+        "retrievedAt": "2026-09-26T21:40:15.220Z",
+        "mode": "unavailable",
+        "error": "Source unavailable or geometry incomplete."
+      },
+      {
+        "id": "landslide",
+        "title": "City of Pittsburgh · Landslide-prone areas",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0/query?f=geojson&where=1%3D1&outFields=landslideprone%2Ccode&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.01073434389554%2C%22ymin%22%3A40.43029210880304%2C%22xmax%22%3A-80.00969359281218%2C%22ymax%22%3A40.43097827911858%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-26T21:40:15.143Z",
+        "mode": "live"
+      }
+    ],
+    "warnings": [
+      "City of Pittsburgh · 25%+ slope could not be assessed.",
+      "Multiple mapped zoning districts intersect this parcel; interpretation requires City review."
+    ]
+  },
+  {
+    "snapshotId": "840863f3-8731-42db-a065-561e47297713",
+    "pin": "0004F00116000000",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.00999277226019,
+            40.43029210880304
+          ],
+          [
+            -80.01020527200511,
+            40.43040062513702
+          ],
+          [
+            -80.01032683158708,
+            40.4304627750211
+          ],
+          [
+            -80.01035744767975,
+            40.430478492143536
+          ],
+          [
+            -80.0103985896596,
+            40.43040605805605
+          ],
+          [
+            -80.01040368468769,
+            40.43039708730997
+          ],
+          [
+            -80.01041853833425,
+            40.430371236394535
+          ],
+          [
+            -80.01008672988866,
+            40.430187231601465
+          ],
+          [
+            -80.00999277226019,
+            40.43029210880304
+          ]
+        ]
+      ]
+    },
+    "areaSqFt": 5193.618822343947,
+    "reportedAreaSqFt": 5199.190890978569,
+    "city": "Pittsburgh",
+    "cityVerified": true,
+    "zoningDistricts": [
+      {
+        "code": "LNC",
+        "share": 1.5764632928612914,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.01035744778277,
+                40.43047849196218
+              ],
+              [
+                -80.00999556484884,
+                40.43028899166516
+              ],
+              [
+                -80.00999277226019,
+                40.43029210880304
+              ],
+              [
+                -80.01020527200511,
+                40.43040062513702
+              ],
+              [
+                -80.01032683158708,
+                40.4304627750211
+              ],
+              [
+                -80.01035744767975,
+                40.430478492143536
+              ],
+              [
+                -80.01035744778277,
+                40.43047849196218
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "code": "R2-H",
+        "share": 98.42353014096973,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.01041853833425,
+                40.430371236394535
+              ],
+              [
+                -80.01008672988866,
+                40.430187231601465
+              ],
+              [
+                -80.00999556485436,
+                40.430288991659005
+              ],
+              [
+                -80.01035744778669,
+                40.43047849195526
+              ],
+              [
+                -80.0103985896596,
+                40.43040605805605
+              ],
+              [
+                -80.01040368468769,
+                40.43039708730997
+              ],
+              [
+                -80.01041853833425,
+                40.430371236394535
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "zoningAvailable": true,
+    "layers": [
+      {
+        "id": "slope",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      },
+      {
+        "id": "landslide",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "parcel",
+        "title": "Allegheny County · Parcel boundaries",
+        "url": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0",
+        "queryUrl": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0/query?f=geojson&where=PIN+%3D+%270004F00116000000%27+OR+MAPBLOCKLOT+%3D+%270004F00116000000%27&outFields=PIN%2CMAPBLOCKLOT%2CMUNICODE%2CCALCACREAGE%2CSHAPE_Area&outSR=4326&returnGeometry=true",
+        "retrievedAt": "2026-09-27T18:42:35.949Z",
+        "mode": "live"
+      },
+      {
+        "id": "zoning",
+        "title": "City of Pittsburgh · Base zoning",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0/query?f=geojson&where=1%3D1&outFields=zon_new%2Cfull_zoning_type&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.01041853833425%2C%22ymin%22%3A40.430187231601465%2C%22xmax%22%3A-80.00999277226019%2C%22ymax%22%3A40.430478492143536%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-27T18:42:36.482Z",
+        "mode": "live"
+      },
+      {
+        "id": "slope",
+        "title": "City of Pittsburgh · 25%+ slope",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0/query?f=geojson&where=1%3D1&outFields=slope25&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.01041853833425%2C%22ymin%22%3A40.430187231601465%2C%22xmax%22%3A-80.00999277226019%2C%22ymax%22%3A40.430478492143536%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-27T18:42:36.480Z",
+        "mode": "live"
+      },
+      {
+        "id": "landslide",
+        "title": "City of Pittsburgh · Landslide-prone areas",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0/query?f=geojson&where=1%3D1&outFields=landslideprone%2Ccode&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.01041853833425%2C%22ymin%22%3A40.430187231601465%2C%22xmax%22%3A-80.00999277226019%2C%22ymax%22%3A40.430478492143536%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-27T18:42:36.381Z",
+        "mode": "live"
+      }
+    ],
+    "warnings": [
+      "Multiple mapped zoning districts intersect this parcel; interpretation requires City review."
+    ]
+  },
+  {
+    "snapshotId": "e4ef5565-55a7-469b-ba87-7845ea278eaf",
+    "pin": "0004B00195000001",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -80.00920521304037,
+            40.43177154762428
+          ],
+          [
+            -80.00900236589241,
+            40.43198397801614
+          ],
+          [
+            -80.00895942616066,
+            40.43202894612243
+          ],
+          [
+            -80.00888494367895,
+            40.432106946826245
+          ],
+          [
+            -80.00886342680182,
+            40.43212947995456
+          ],
+          [
+            -80.00905639167009,
+            40.4322343852195
+          ],
+          [
+            -80.00913442554481,
+            40.43215205605091
+          ],
+          [
+            -80.0093975054155,
+            40.43187575277423
+          ],
+          [
+            -80.00920521304037,
+            40.43177154762428
+          ]
+        ]
+      ]
+    },
+    "areaSqFt": 10603.141792619708,
+    "reportedAreaSqFt": 10614.537166912482,
+    "city": "Pittsburgh",
+    "cityVerified": true,
+    "zoningDistricts": [
+      {
+        "code": "R2-H",
+        "share": 99.96841479529036,
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -80.0093975054155,
+                40.43187575277423
+              ],
+              [
+                -80.00920521304037,
+                40.43177154762428
+              ],
+              [
+                -80.00900236589241,
+                40.43198397801614
+              ],
+              [
+                -80.00895942616066,
+                40.43202894612243
+              ],
+              [
+                -80.00888494367895,
+                40.432106946826245
+              ],
+              [
+                -80.00886434203504,
+                40.432128521494484
+              ],
+              [
+                -80.0088886758022,
+                40.432141961494615
+              ],
+              [
+                -80.00888792066452,
+                40.43214279603214
+              ],
+              [
+                -80.00905639167009,
+                40.4322343852195
+              ],
+              [
+                -80.00913442554481,
+                40.43215205605091
+              ],
+              [
+                -80.0093975054155,
+                40.43187575277423
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "zoningAvailable": true,
+    "layers": [
+      {
+        "id": "slope",
+        "available": false,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      },
+      {
+        "id": "landslide",
+        "available": true,
+        "overlapSqFt": 0,
+        "overlapPercent": 0,
+        "geometry": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "parcel",
+        "title": "Allegheny County · Parcel boundaries",
+        "url": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0",
+        "queryUrl": "https://gisdata.alleghenycounty.us/arcgis/rest/services/OPENDATA/Parcels/MapServer/0/query?f=geojson&where=PIN+%3D+%270004B00195000001%27+OR+MAPBLOCKLOT+%3D+%270004B00195000001%27&outFields=PIN%2CMAPBLOCKLOT%2CMUNICODE%2CCALCACREAGE%2CSHAPE_Area&outSR=4326&returnGeometry=true",
+        "retrievedAt": "2026-09-27T18:42:36.820Z",
+        "mode": "live"
+      },
+      {
+        "id": "zoning",
+        "title": "City of Pittsburgh · Base zoning",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Zoning/FeatureServer/0/query?f=geojson&where=1%3D1&outFields=zon_new%2Cfull_zoning_type&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.0093975054155%2C%22ymin%22%3A40.43177154762428%2C%22xmax%22%3A-80.00886342680182%2C%22ymax%22%3A40.4322343852195%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-27T18:42:37.118Z",
+        "mode": "live"
+      },
+      {
+        "id": "slope",
+        "title": "City of Pittsburgh · 25%+ slope",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Slope_25/MapServer/0",
+        "retrievedAt": "2026-09-27T18:42:37.857Z",
+        "mode": "unavailable",
+        "error": "Source unavailable or geometry incomplete."
+      },
+      {
+        "id": "landslide",
+        "title": "City of Pittsburgh · Landslide-prone areas",
+        "url": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0",
+        "queryUrl": "https://pghbridgis.pittsburghpa.gov/federated/rest/services/Landslide_Prone/MapServer/0/query?f=geojson&where=1%3D1&outFields=landslideprone%2Ccode&outSR=4326&returnGeometry=true&geometry=%7B%22xmin%22%3A-80.0093975054155%2C%22ymin%22%3A40.43177154762428%2C%22xmax%22%3A-80.00886342680182%2C%22ymax%22%3A40.4322343852195%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects",
+        "retrievedAt": "2026-09-27T18:42:37.851Z",
+        "mode": "live"
+      }
+    ],
+    "warnings": [
+      "City of Pittsburgh · 25%+ slope could not be assessed."
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "name": "parcelpilot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "predev": "node scripts/prepare-map.mjs",
+    "prebuild": "node scripts/prepare-map.mjs"
+  },
+  "dependencies": {
+    "@turf/area": "^7.4.0",
+    "@turf/boolean-intersects": "^7.4.0",
+    "@turf/helpers": "^7.4.0",
+    "@turf/intersect": "^7.4.0",
+    "@turf/turf": "7.4.0",
+    "@turf/union": "^7.4.0",
+    "lucide-react": "^1.48.0",
+    "maplibre-gl": "^6.11.2",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.2"
+  },
+  "packageManager": "pnpm@10.0.0"
+}
